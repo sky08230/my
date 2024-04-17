@@ -1,7 +1,7 @@
 import logging
 
 
-logging.basicConfig(filename='log_bank.csv',filemode='w',format='%(asctime)s -%(name)s -%(levelname)s -%(message)s')
+logging.basicConfig(filename='log_bank.csv',filemode='w+',format='%(asctime)s -%(name)s -%(levelname)s -%(message)s')
 logger=logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 

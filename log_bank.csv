@@ -1,0 +1,8 @@
+2024-04-17 02:49:37,250 -banking_system_imp -INFO -successfully create account account1 with 0
+2024-04-17 02:49:37,250 -banking_system_imp -INFO -successfully create account account2 with 0
+2024-04-17 02:49:37,250 -banking_system_imp -INFO -successfully deposit account account1 with 2000
+2024-04-17 02:49:37,250 -banking_system_imp -INFO -successfully deposit account account2 with 1000
+2024-04-17 02:49:37,250 -banking_system_imp -INFO -successfully transfer from account1 to account2 with 500
+2024-04-17 02:49:37,251 -banking_system_imp -INFO -successfully withdraw account account1 with 100
+2024-04-17 02:49:37,251 -banking_system_imp -INFO -successfully withdraw account account2 with 300
+2024-04-17 02:49:37,251 -banking_system_imp -ERROR -overdraft account
