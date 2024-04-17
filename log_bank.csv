@@ -1,0 +1,4 @@
+2024-04-17 01:02:56,399 -__main__ -INFO -successfully create account account1 with 100
+2024-04-17 01:02:56,399 -__main__ -ERROR -account1 already exist
+2024-04-17 01:02:56,400 -__main__ -DEBUG -successfully withdraw account account1 with 10
+2024-04-17 01:02:56,400 -__main__ -ERROR -overdraft account
