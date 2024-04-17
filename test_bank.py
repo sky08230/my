@@ -7,12 +7,7 @@ from banking_system_imp import BankingSystemImp
 
 class Tests(TestCase):
     """
-    The test suit below includes 10 tests for Level 1.
-
-    All have the same score.
-    You are not allowed to modify this file,
-    but feel free to read the source code
-    to better understand what is happening in every specific case.
+    The test suit below includes 3 tests .
     """
 
     failureException = Exception
@@ -23,14 +18,14 @@ class Tests(TestCase):
         cls.system = BankingSystemImp()
 
 
-    def test_level_1_case_01_basic_create(self):
+    def test_case_01(self):
         self.assertEqual(self.system.create_account('account1'),0)
         self.assertEqual(self.system.create_account('account2'),0)
         self.assertEqual(self.system.create_account('account3',10),10)
         self.assertEqual(self.system.create_account('account2',10),False)
 
 
-    def test_level_1_case_02_basic_create_and_deposit(self):
+    def test_case_02(self):
         self.assertEqual(self.system.create_account('account1',100),100)
         self.assertEqual(self.system.create_account('account2'),0)
         self.assertEqual(self.system.deposit('account1', 2500), 2600)
@@ -39,7 +34,7 @@ class Tests(TestCase):
         self.assertEqual(self.system.deposit('account3', 100), False)
 
 
-    def test_level_1_case_03_basic_create_deposit_and_transfer(self):
+    def test_case_03(self):
         self.assertEqual(self.system.create_account('account1'),0)
         self.assertEqual(self.system.create_account('account2'),0)
         self.assertEqual(self.system.deposit('account1', 2000), 2000)
