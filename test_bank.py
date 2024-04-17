@@ -2,7 +2,7 @@
 
 import unittest
 from unittest import TestCase
-from banking_system_imp import BankingSystemImp
+from banking_system_imp import BankingSystemImp,logger
 
 
 class Tests(TestCase):
