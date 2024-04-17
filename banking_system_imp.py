@@ -26,7 +26,7 @@ class BankingSystemImp:
             return False
         else:
             self.account[name]=amount+self.account[name]
-            logger.debug("successfully deposit account %s with %s", name, amount)
+            logger.info("successfully deposit account %s with %s", name, amount)
             return self.account[name]
     def withdraw(self, name, amount):
         if name not in self.account.keys():
@@ -37,7 +37,7 @@ class BankingSystemImp:
             return False       
         else:
              self.account[name]=self.account[name]-amount
-             logger.debug("successfully withdraw account %s with %s", name, amount)
+             logger.info("successfully withdraw account %s with %s", name, amount)
              return self.account[name]
             
     def transfer(self, source_account, target_account, amount):
@@ -50,7 +50,7 @@ class BankingSystemImp:
         else:  
             self.account[source_account]=self.account[source_account]-amount
             self.account[target_account]=self.account[target_account]+amount
-            logger.debug("successfully transfer from %s to %s with %s", source_account,target_account, amount)
+            logger.info("successfully transfer from %s to %s with %s", source_account,target_account, amount)
             return self.account[source_account],self.account[target_account]
 
 
