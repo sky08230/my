@@ -71,6 +71,8 @@ if __name__=="__main__":
     raw_to_bronze(raw_path,bronze_path)
     bronze_to_silver(bronze_path,silver_path)
 
+    
+
 
              
 
