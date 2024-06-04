@@ -134,3 +134,4 @@ def count_occurrences(lst):
         else:
             counts[item] = 1   
     return counts
+ 

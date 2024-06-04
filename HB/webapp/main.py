@@ -87,3 +87,5 @@ async def websocket_endpoint(websocket: WebSocket, username: str):
     except WebSocketDisconnect:
         manager.disconnect(websocket)
         await manager.broadcast(f"{username} left the chat")
+
+         
